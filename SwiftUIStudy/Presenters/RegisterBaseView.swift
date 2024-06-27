@@ -64,6 +64,7 @@ struct RegisterBaseView: View {
                     } else {
                         placeholderColor = .gray
                     }
+                    isNameFieldFocused = false
                 } label: {
                     Text("저 장")
                         .foregroundStyle(.black)
