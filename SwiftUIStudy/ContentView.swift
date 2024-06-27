@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    let routeList = [Router]([.goods,.registerBase])
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        NavigationView(content: {
+            List(routeList, id: \.id) { route in
+                NavigationLink {
+                    route.view
+                } label: {
+                    Text(route.title)
+                }
+
+            }
+        })
     }
 }
 
