@@ -34,7 +34,7 @@ enum Router: Hashable, Identifiable {
     var title: String {
         switch self {
         case .goods: "상품상세"
-        case .registerBase: "사용자입력 기보"
+        case .registerBase: "사용자입력 기본"
         }
     }
 }

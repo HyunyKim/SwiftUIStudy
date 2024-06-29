@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530C4C102C2FE47B00671B08 /* RoundInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530C4C0F2C2FE47B00671B08 /* RoundInputField.swift */; };
+		530C4C122C2FEEBC00671B08 /* CheckBoxBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530C4C112C2FEEBC00671B08 /* CheckBoxBase.swift */; };
+		530C4C142C300CCE00671B08 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 530C4C132C300CCE00671B08 /* README.md */; };
 		5368E6ED2C2DAD6D009D1BB3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5368E6EC2C2DAD6D009D1BB3 /* Router.swift */; };
 		5368E6F02C2DB2F9009D1BB3 /* GoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5368E6EF2C2DB2F9009D1BB3 /* GoodDetailView.swift */; };
 		5368E6F22C2DB309009D1BB3 /* RegisterBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5368E6F12C2DB309009D1BB3 /* RegisterBaseView.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		530C4C0F2C2FE47B00671B08 /* RoundInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundInputField.swift; sourceTree = "<group>"; };
+		530C4C112C2FEEBC00671B08 /* CheckBoxBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxBase.swift; sourceTree = "<group>"; };
+		530C4C132C300CCE00671B08 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		5368E6EC2C2DAD6D009D1BB3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		5368E6EF2C2DB2F9009D1BB3 /* GoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodDetailView.swift; sourceTree = "<group>"; };
 		5368E6F12C2DB309009D1BB3 /* RegisterBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBaseView.swift; sourceTree = "<group>"; };
@@ -40,6 +46,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		530C4C0E2C2FE41300671B08 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				530C4C0F2C2FE47B00671B08 /* RoundInputField.swift */,
+				530C4C112C2FEEBC00671B08 /* CheckBoxBase.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		534FCA6F2C2FE2CF000DD50C /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				530C4C0E2C2FE41300671B08 /* SubView */,
+				5368E6F12C2DB309009D1BB3 /* RegisterBaseView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		5368E6EE2C2DB2D3009D1BB3 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +97,7 @@
 				53EAEE372C2C6E22000F5512 /* SwiftUIStudyApp.swift */,
 				53EAEE392C2C6E22000F5512 /* ContentView.swift */,
 				53EAEE3B2C2C6E23000F5512 /* Assets.xcassets */,
+				530C4C132C300CCE00671B08 /* README.md */,
 				53EAEE3D2C2C6E23000F5512 /* Preview Content */,
 			);
 			path = SwiftUIStudy;
@@ -89,8 +114,8 @@
 		53EAEE452C2C6EAF000F5512 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				534FCA6F2C2FE2CF000DD50C /* Register */,
 				5368E6EF2C2DB2F9009D1BB3 /* GoodDetailView.swift */,
-				5368E6F12C2DB309009D1BB3 /* RegisterBaseView.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -153,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				530C4C142C300CCE00671B08 /* README.md in Resources */,
 				53EAEE3F2C2C6E23000F5512 /* Preview Assets.xcassets in Resources */,
 				53EAEE3C2C2C6E23000F5512 /* Assets.xcassets in Resources */,
 			);
@@ -165,12 +191,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				530C4C102C2FE47B00671B08 /* RoundInputField.swift in Sources */,
 				5368E6F02C2DB2F9009D1BB3 /* GoodDetailView.swift in Sources */,
 				5368E6ED2C2DAD6D009D1BB3 /* Router.swift in Sources */,
 				5368E6F22C2DB309009D1BB3 /* RegisterBaseView.swift in Sources */,
 				53EAEE3A2C2C6E22000F5512 /* ContentView.swift in Sources */,
 				53EAEE382C2C6E22000F5512 /* SwiftUIStudyApp.swift in Sources */,
 				53EAEE472C2C6ECD000F5512 /* AnimationCircleView.swift in Sources */,
+				530C4C122C2FEEBC00671B08 /* CheckBoxBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
