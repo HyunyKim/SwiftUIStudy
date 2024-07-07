@@ -26,7 +26,11 @@ struct RoundInputField: View {
         }
         .padding(12)
         .background(.gray.opacity(0.1))
-        .clipShape(RoundedRectangle(cornerRadius: 16))
+        .cornerRadius(10.0)
+        .overlay(
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(isFocused ? .green : .black.opacity(0.3), lineWidth: 1)  // 테두리 설정
+        )
     }
     
     private func placeHolderView(text: String) -> Text {

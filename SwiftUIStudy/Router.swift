@@ -11,6 +11,7 @@ import SwiftUI
 enum Router: Hashable, Identifiable {
     case goods
     case registerBase
+    case list
     
     var id: UUID {
         switch self {
@@ -28,6 +29,8 @@ enum Router: Hashable, Identifiable {
             GoodDetailView()
         case .registerBase:
             RegisterBaseView(route: self)
+        case .list:
+            ListSampleView(route: self)
         }
     }
     
@@ -35,6 +38,7 @@ enum Router: Hashable, Identifiable {
         switch self {
         case .goods: "상품상세"
         case .registerBase: "사용자입력 기본"
+        case .list: "리스트 심화"
         }
     }
 }
@@ -43,7 +47,7 @@ extension Router {
     
     static func == (lhs: Router, rhs: Router) -> Bool {
         switch (lhs,rhs) {
-        case (.goods, .goods),(.registerBase,.registerBase):
+        case (.goods, .goods),(.registerBase,.registerBase),(.list,.list):
             return true
         default:
             return false
@@ -56,6 +60,8 @@ extension Router {
             hasher.combine(0)
         case .registerBase:
             hasher.combine(1)
+        case .list:
+            hasher.combine(2)
         }
     }
 }

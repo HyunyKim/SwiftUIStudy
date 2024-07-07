@@ -10,9 +10,12 @@
 		530C4C102C2FE47B00671B08 /* RoundInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530C4C0F2C2FE47B00671B08 /* RoundInputField.swift */; };
 		530C4C122C2FEEBC00671B08 /* CheckBoxBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530C4C112C2FEEBC00671B08 /* CheckBoxBase.swift */; };
 		530C4C142C300CCE00671B08 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 530C4C132C300CCE00671B08 /* README.md */; };
+		53426DF42C32FC9600C8E417 /* SegmentPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53426DF32C32FC9600C8E417 /* SegmentPickerView.swift */; };
 		5368E6ED2C2DAD6D009D1BB3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5368E6EC2C2DAD6D009D1BB3 /* Router.swift */; };
 		5368E6F02C2DB2F9009D1BB3 /* GoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5368E6EF2C2DB2F9009D1BB3 /* GoodDetailView.swift */; };
 		5368E6F22C2DB309009D1BB3 /* RegisterBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5368E6F12C2DB309009D1BB3 /* RegisterBaseView.swift */; };
+		539A578C2C3AB7A100322912 /* ListSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539A578B2C3AB7A100322912 /* ListSampleView.swift */; };
+		539A578F2C3AC59A00322912 /* NormalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539A578E2C3AC59A00322912 /* NormalView.swift */; };
 		53EAEE382C2C6E22000F5512 /* SwiftUIStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EAEE372C2C6E22000F5512 /* SwiftUIStudyApp.swift */; };
 		53EAEE3A2C2C6E22000F5512 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EAEE392C2C6E22000F5512 /* ContentView.swift */; };
 		53EAEE3C2C2C6E23000F5512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53EAEE3B2C2C6E23000F5512 /* Assets.xcassets */; };
@@ -24,9 +27,12 @@
 		530C4C0F2C2FE47B00671B08 /* RoundInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundInputField.swift; sourceTree = "<group>"; };
 		530C4C112C2FEEBC00671B08 /* CheckBoxBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxBase.swift; sourceTree = "<group>"; };
 		530C4C132C300CCE00671B08 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		53426DF32C32FC9600C8E417 /* SegmentPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentPickerView.swift; sourceTree = "<group>"; };
 		5368E6EC2C2DAD6D009D1BB3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		5368E6EF2C2DB2F9009D1BB3 /* GoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodDetailView.swift; sourceTree = "<group>"; };
 		5368E6F12C2DB309009D1BB3 /* RegisterBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBaseView.swift; sourceTree = "<group>"; };
+		539A578B2C3AB7A100322912 /* ListSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSampleView.swift; sourceTree = "<group>"; };
+		539A578E2C3AC59A00322912 /* NormalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalView.swift; sourceTree = "<group>"; };
 		53EAEE342C2C6E22000F5512 /* SwiftUIStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53EAEE372C2C6E22000F5512 /* SwiftUIStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStudyApp.swift; sourceTree = "<group>"; };
 		53EAEE392C2C6E22000F5512 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +57,7 @@
 			children = (
 				530C4C0F2C2FE47B00671B08 /* RoundInputField.swift */,
 				530C4C112C2FEEBC00671B08 /* CheckBoxBase.swift */,
+				53426DF32C32FC9600C8E417 /* SegmentPickerView.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -70,6 +77,15 @@
 				53EAEE462C2C6ECD000F5512 /* AnimationCircleView.swift */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		539A578A2C3AB78C00322912 /* ListSamples */ = {
+			isa = PBXGroup;
+			children = (
+				539A578B2C3AB7A100322912 /* ListSampleView.swift */,
+				539A578E2C3AC59A00322912 /* NormalView.swift */,
+			);
+			path = ListSamples;
 			sourceTree = "<group>";
 		};
 		53EAEE2B2C2C6E22000F5512 = {
@@ -114,6 +130,7 @@
 		53EAEE452C2C6EAF000F5512 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				539A578A2C3AB78C00322912 /* ListSamples */,
 				534FCA6F2C2FE2CF000DD50C /* Register */,
 				5368E6EF2C2DB2F9009D1BB3 /* GoodDetailView.swift */,
 			);
@@ -191,6 +208,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539A578F2C3AC59A00322912 /* NormalView.swift in Sources */,
+				53426DF42C32FC9600C8E417 /* SegmentPickerView.swift in Sources */,
 				530C4C102C2FE47B00671B08 /* RoundInputField.swift in Sources */,
 				5368E6F02C2DB2F9009D1BB3 /* GoodDetailView.swift in Sources */,
 				5368E6ED2C2DAD6D009D1BB3 /* Router.swift in Sources */,
@@ -198,6 +217,7 @@
 				53EAEE3A2C2C6E22000F5512 /* ContentView.swift in Sources */,
 				53EAEE382C2C6E22000F5512 /* SwiftUIStudyApp.swift in Sources */,
 				53EAEE472C2C6ECD000F5512 /* AnimationCircleView.swift in Sources */,
+				539A578C2C3AB7A100322912 /* ListSampleView.swift in Sources */,
 				530C4C122C2FEEBC00671B08 /* CheckBoxBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -29,6 +29,7 @@ struct RegisterBaseView: View {
     @State private var isInformationAgree: Bool = false
     @State private var isEmailAgree: Bool = false
     
+    @State private var sementSeledted = 0
     private let allSubject =  PassthroughSubject<Bool,Never>()
     
     var attributedString: AttributedString {
@@ -143,8 +144,6 @@ struct RegisterBaseView: View {
                     .transition(.opacity)
                     .animation(.easeInOut(duration: 1), value: isEmailAgree)
                 }
-                
-                
                 VStack {
                     Text(attributedString)
                         .truncationMode(.tail)
@@ -167,6 +166,8 @@ struct RegisterBaseView: View {
                         .background(.yellow)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                 }
+                
+                SegmentPickerView(selectedSegment: $sementSeledted, segments: ["집","직장","직접입력"])
             })
             .padding([.leading,.trailing],20)
             .onTapGesture {
