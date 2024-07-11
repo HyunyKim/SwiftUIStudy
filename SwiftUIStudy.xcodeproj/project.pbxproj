@@ -10,6 +10,10 @@
 		530C4C102C2FE47B00671B08 /* RoundInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530C4C0F2C2FE47B00671B08 /* RoundInputField.swift */; };
 		530C4C122C2FEEBC00671B08 /* CheckBoxBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530C4C112C2FEEBC00671B08 /* CheckBoxBase.swift */; };
 		530C4C142C300CCE00671B08 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 530C4C132C300CCE00671B08 /* README.md */; };
+		5328FC522C4020A0006C75E7 /* AlarmMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5328FC512C4020A0006C75E7 /* AlarmMainView.swift */; };
+		5328FC562C4022C4006C75E7 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5328FC552C4022C4006C75E7 /* NavigationView.swift */; };
+		5328FC582C403065006C75E7 /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5328FC572C403065006C75E7 /* AlarmViewModel.swift */; };
+		5328FC5B2C4031AC006C75E7 /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5328FC5A2C4031AC006C75E7 /* AlarmModel.swift */; };
 		53426DF42C32FC9600C8E417 /* SegmentPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53426DF32C32FC9600C8E417 /* SegmentPickerView.swift */; };
 		5368E6ED2C2DAD6D009D1BB3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5368E6EC2C2DAD6D009D1BB3 /* Router.swift */; };
 		5368E6F02C2DB2F9009D1BB3 /* GoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5368E6EF2C2DB2F9009D1BB3 /* GoodDetailView.swift */; };
@@ -27,6 +31,10 @@
 		530C4C0F2C2FE47B00671B08 /* RoundInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundInputField.swift; sourceTree = "<group>"; };
 		530C4C112C2FEEBC00671B08 /* CheckBoxBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxBase.swift; sourceTree = "<group>"; };
 		530C4C132C300CCE00671B08 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		5328FC512C4020A0006C75E7 /* AlarmMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmMainView.swift; sourceTree = "<group>"; };
+		5328FC552C4022C4006C75E7 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		5328FC572C403065006C75E7 /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
+		5328FC5A2C4031AC006C75E7 /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
 		53426DF32C32FC9600C8E417 /* SegmentPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentPickerView.swift; sourceTree = "<group>"; };
 		5368E6EC2C2DAD6D009D1BB3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		5368E6EF2C2DB2F9009D1BB3 /* GoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodDetailView.swift; sourceTree = "<group>"; };
@@ -60,6 +68,40 @@
 				53426DF32C32FC9600C8E417 /* SegmentPickerView.swift */,
 			);
 			path = SubView;
+			sourceTree = "<group>";
+		};
+		5328FC502C402086006C75E7 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				5328FC592C40319A006C75E7 /* Model */,
+				5328FC572C403065006C75E7 /* AlarmViewModel.swift */,
+				5328FC512C4020A0006C75E7 /* AlarmMainView.swift */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		5328FC532C4022B0006C75E7 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				5328FC542C4022B7006C75E7 /* NavigationView */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		5328FC542C4022B7006C75E7 /* NavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				5328FC552C4022C4006C75E7 /* NavigationView.swift */,
+			);
+			path = NavigationView;
+			sourceTree = "<group>";
+		};
+		5328FC592C40319A006C75E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5328FC5A2C4031AC006C75E7 /* AlarmModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		534FCA6F2C2FE2CF000DD50C /* Register */ = {
@@ -130,6 +172,8 @@
 		53EAEE452C2C6EAF000F5512 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				5328FC532C4022B0006C75E7 /* Component */,
+				5328FC502C402086006C75E7 /* Alarm */,
 				539A578A2C3AB78C00322912 /* ListSamples */,
 				534FCA6F2C2FE2CF000DD50C /* Register */,
 				5368E6EF2C2DB2F9009D1BB3 /* GoodDetailView.swift */,
@@ -211,11 +255,15 @@
 				539A578F2C3AC59A00322912 /* NormalView.swift in Sources */,
 				53426DF42C32FC9600C8E417 /* SegmentPickerView.swift in Sources */,
 				530C4C102C2FE47B00671B08 /* RoundInputField.swift in Sources */,
+				5328FC522C4020A0006C75E7 /* AlarmMainView.swift in Sources */,
 				5368E6F02C2DB2F9009D1BB3 /* GoodDetailView.swift in Sources */,
+				5328FC5B2C4031AC006C75E7 /* AlarmModel.swift in Sources */,
+				5328FC582C403065006C75E7 /* AlarmViewModel.swift in Sources */,
 				5368E6ED2C2DAD6D009D1BB3 /* Router.swift in Sources */,
 				5368E6F22C2DB309009D1BB3 /* RegisterBaseView.swift in Sources */,
 				53EAEE3A2C2C6E22000F5512 /* ContentView.swift in Sources */,
 				53EAEE382C2C6E22000F5512 /* SwiftUIStudyApp.swift in Sources */,
+				5328FC562C4022C4006C75E7 /* NavigationView.swift in Sources */,
 				53EAEE472C2C6ECD000F5512 /* AnimationCircleView.swift in Sources */,
 				539A578C2C3AB7A100322912 /* ListSampleView.swift in Sources */,
 				530C4C122C2FEEBC00671B08 /* CheckBoxBase.swift in Sources */,
