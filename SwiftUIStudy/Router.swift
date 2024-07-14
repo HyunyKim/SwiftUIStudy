@@ -33,7 +33,7 @@ enum Router: Hashable, Identifiable {
         case .list:
             ListSampleView(route: self)
         case .alarm:
-            AlarmMainView(route: self, viewModel: AlamViewModel())
+            AlarmMainView(route: self, viewModel:AlarmViewModel())
         }
     }
     

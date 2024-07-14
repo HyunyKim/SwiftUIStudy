@@ -13,11 +13,30 @@ struct AlarmMainView: View {
     let route: Router
     @StateObject var viewModel: AlarmViewModel
     var body: some View {
-        ScrollView(.vertical) {
-            VStack(spacing: 0, content: {
-                Text("")
-            })
+        Form {
+            Text("이건 안되느기가")
         }
+        Form(content: {
+            if viewModel.alarmList != nil {
+                List(viewModel.alarmList!) { item in
+                    Text("암 것도 없다")
+                }
+            } else {
+                Text("암 것도 없다")
+                Text("암 것도 없다")
+                Text("암 것도 없다")
+                Text("암 것도 없다")
+                Button {
+                    print("")
+                } label: {
+                    Text("anjwl")
+                }
+
+            }
+        })
+        
+     
+        
         .navigationBarBackButtonHidden()
         .toolbar {
             ToolbarItemGroup(placement: .principal) {

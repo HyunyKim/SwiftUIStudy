@@ -9,6 +9,10 @@ import Foundation
 import SwiftUI
 
 final class AlarmViewModel: ObservableObject {
-    private var list = [AlarmModel]()
+    @Published var alarmList: [AlarmModel]?
     init() {}
+    
+    func requestList() async -> Bool {
+        return false
+    }
 }

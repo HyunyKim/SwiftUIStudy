@@ -13,8 +13,11 @@ enum AlarmType: String {
     case event
 }
 
-struct AlarmModel {
+struct AlarmModel: Identifiable {
+    let id = UUID()
     let type: AlarmType
     let title: String
     let content: String
+    let subContent: [String]
+    var expended: Bool
 }
