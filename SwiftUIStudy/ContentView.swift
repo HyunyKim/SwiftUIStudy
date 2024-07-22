@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    let routeList = [Router]([.goods,.registerBase,.list,.alarm])
+    let routeList = [Router]([.goods,.registerBase,.list,.alarm,.drag,.drag2])
     var body: some View {
         NavigationView(content: {
             List(routeList, id: \.id) { route in

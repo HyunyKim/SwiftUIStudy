@@ -13,7 +13,8 @@ enum Router: Hashable, Identifiable {
     case registerBase
     case list
     case alarm
-    
+    case drag
+    case drag2
     var id: UUID {
         switch self {
         default:
@@ -34,6 +35,10 @@ enum Router: Hashable, Identifiable {
             ListSampleView(route: self)
         case .alarm:
             AlarmMainView(route: self, viewModel:AlarmViewModel())
+        case .drag:
+            Gesture1View()
+        case .drag2:
+            Gesture2View()
         }
     }
     
@@ -43,6 +48,8 @@ enum Router: Hashable, Identifiable {
         case .registerBase: "사용자입력 기본"
         case .list: "리스트 심화"
         case .alarm: "알림"
+        case .drag: "드레그"
+        case .drag2: "드레그2"
         }
     }
 }
@@ -51,7 +58,12 @@ extension Router {
     
     static func == (lhs: Router, rhs: Router) -> Bool {
         switch (lhs,rhs) {
-        case (.goods, .goods),(.registerBase,.registerBase),(.list,.list),(.alarm,.alarm):
+        case (.goods, .goods),
+            (.registerBase,.registerBase),
+            (.list,.list),
+            (.alarm,.alarm),
+            (.drag,.drag),
+            (.drag2,.drag2):
             return true
         default:
             return false
@@ -68,6 +80,10 @@ extension Router {
             hasher.combine(2)
         case .alarm:
             hasher.combine(3)
+        case .drag:
+            hasher.combine(4)
+        case .drag2:
+            hasher.combine(5)
         }
     }
 }
