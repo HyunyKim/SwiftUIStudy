@@ -15,6 +15,7 @@ enum Router: Hashable, Identifiable {
     case alarm
     case drag
     case drag2
+    case chatUI
     var id: UUID {
         switch self {
         default:
@@ -39,6 +40,8 @@ enum Router: Hashable, Identifiable {
             Gesture1View()
         case .drag2:
             Gesture2View()
+        case .chatUI:
+            ChatBaseView()
         }
     }
     
@@ -50,6 +53,7 @@ enum Router: Hashable, Identifiable {
         case .alarm: "알림"
         case .drag: "드레그"
         case .drag2: "드레그2"
+        case .chatUI: "채팅"
         }
     }
 }
@@ -63,7 +67,8 @@ extension Router {
             (.list,.list),
             (.alarm,.alarm),
             (.drag,.drag),
-            (.drag2,.drag2):
+            (.drag2,.drag2),
+            (.chatUI,.chatUI):
             return true
         default:
             return false
@@ -84,6 +89,8 @@ extension Router {
             hasher.combine(4)
         case .drag2:
             hasher.combine(5)
+        case .chatUI:
+            hasher.combine(6)
         }
     }
 }
